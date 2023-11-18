@@ -12,4 +12,7 @@ function togglePassword() {
         eyeIcon.classList.remove("fa-solid", "fa-eye");
         eyeIcon.classList.add("fa-solid", "fa-eye-slash");
     }
-  }
+}
+
+
+

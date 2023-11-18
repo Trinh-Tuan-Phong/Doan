@@ -43,6 +43,35 @@ app.get('/PC_PVN_x_ASUS_EVANGELION_2', (req, res) => {
     res.sendFile(__dirname + '/select__item--PC/item__1.html');
 });
 
+app.get('/PC_PVN_Gaming_Intel_i7-13700k', (req, res) => {
+    res.sendFile(__dirname + '/select__item--PC/item__2.html');
+});
+
+app.get('/PC_PVN_Gaming_Intel_i7-13700F', (req, res) => {
+    res.sendFile(__dirname + '/select__item--PC/item__3.html');
+});
+
+app.get('/PC_PVN_Gaming_Intel_i5-13400F', (req, res) => {
+    res.sendFile(__dirname + '/select__item--PC/item__4.html');
+});
+
+app.get('/PC_PVN_Intel_i5-13600KF', (req, res) => {
+    res.sendFile(__dirname + '/select__item--PC/item__5.html');
+});
+
+app.get('/PC_PVN_AMD_R5-7600', (req, res) => {
+    res.sendFile(__dirname + '/select__item--PC/item__6.html');
+});
+
+app.get('/PC_GVN_Intel_i5-12400F', (req, res) => {
+    res.sendFile(__dirname + '/select__item--PC/item__7.html');
+});
+
+app.get('/PC_PVN_AMD_R5-7600.', (req, res) => {
+    res.sendFile(__dirname + '/select__item--PC/item__8.html');
+});
+
+
 // Login 
 
 app.post('/login', (req, res) => {
