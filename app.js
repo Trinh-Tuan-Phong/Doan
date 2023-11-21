@@ -71,6 +71,81 @@ app.get('/PC_PVN_AMD_R5-7600.', (req, res) => {
     res.sendFile(__dirname + '/select__item--PC/item__8.html');
 });
 
+app.get('/LAPTOP', (req, res) => {
+    res.sendFile(__dirname + '/select__item--laptop/LAPTOP.html');
+});
+
+app.get('/Laptop_LG_Gram_Style_14Z90RS_GAH54A5', (req, res) => {
+    res.sendFile(__dirname + '/select__item--laptop/item__1.html');
+});
+
+app.get('/Laptop_ASUS_Zenbook_14_OLED_UX3402VA_KM068W', (req, res) => {
+    res.sendFile(__dirname + '/select__item--laptop/item__2.html');
+});
+
+app.get('/Laptop_LG_Gram_2023_14Z90R_GAH53A5', (req, res) => {
+    res.sendFile(__dirname + '/select__item--laptop/item__3.html');
+});
+
+app.get('/Laptop_Dell_Vostro_13_5320_V3I7005W_Gray', (req, res) => {
+    res.sendFile(__dirname + '/select__item--laptop/item__4.html');
+});
+
+app.get('/Laptop_Lenovo_Yoga_Slim_6_14IRH8_83E0000VVN', (req, res) => {
+    res.sendFile(__dirname + '/select__item--laptop/item__5.html');
+});
+
+app.get('/Laptop_Asus_Vivobook_15_OLED_A1505VA_L1114W', (req, res) => {
+    res.sendFile(__dirname + '/select__item--laptop/item__6.html');
+});
+
+app.get('/LAPTOP__GAMING', (req, res) => {
+    res.sendFile(__dirname + '/select__item--laptopgaming/LAPTOP__gaming.html');
+});
+
+app.get('/Laptop_gaming_MSI_Stealth_GS77_12UHS_250VN', (req, res) => {
+    res.sendFile(__dirname + '/select__item--laptopgaming/item__1.html');
+});
+
+app.get('/Laptop_gaming_ASUS_ROG_Zephyrus_G15_GA503RS_LN892W', (req, res) => {
+    res.sendFile(__dirname + '/select__item--laptopgaming/item__2.html');
+});
+
+app.get('/Laptop_gaming_Acer_Predator_Helios_Neo_16_PHN16_71_53M7', (req, res) => {
+    res.sendFile(__dirname + '/select__item--laptopgaming/item__3.html');
+});
+
+app.get('/Laptop_gaming_ASUS_TUF_A15_FA507NU_LP031W', (req, res) => {
+    res.sendFile(__dirname + '/select__item--laptopgaming/item__4.html');
+});
+
+app.get('/Laptop_gaming_MSI_GF63_12UC_887VN', (req, res) => {
+    res.sendFile(__dirname + '/select__item--laptopgaming/item__5.html');
+});
+
+app.get('/MOUSE', (req, res) => {
+    res.sendFile(__dirname + '/select__item--mouse/Mouse.html');
+});
+
+app.get('/Chuot_Logitech_G_Pro_X_Superlight_Wireless_Red', (req, res) => {
+    res.sendFile(__dirname + '/select__item--mouse/item__1.html');
+});
+
+app.get('/Chuot_Pulsar_X2_Super_Clear_Edition', (req, res) => {
+    res.sendFile(__dirname + '/select__item--mouse/item__2.html');
+});
+
+app.get('/Chuot_Steelseries_Prime_Wireless', (req, res) => {
+    res.sendFile(__dirname + '/select__item--mouse/item__3.html');
+});
+
+app.get('/Chuot_Asus_TUF_Gaming_M3_Gen_II', (req, res) => {
+    res.sendFile(__dirname + '/select__item--mouse/item__4.html');
+});
+
+app.get('/Chuot_Gaming_Havit_MS878', (req, res) => {
+    res.sendFile(__dirname + '/select__item--mouse/item__5.html');
+});
 
 // Login 
 
@@ -121,4 +196,16 @@ app.use(express.static(__dirname + '/public'));
 
 app.use(express.static(__dirname + '/select__item--PC'));
 
+app.use(express.static(__dirname + '/select__item--laptop'));
+
+app.use(express.static(__dirname + '/select__item--laptopgaming'));
+
+app.use(express.static(__dirname + '/select__item--mouse'));
+
 app.use('/images', express.static(path.join(__dirname, 'public/image')));
+
+app.use('/image__LT', express.static(path.join(__dirname, 'public/image__item--laptop')));
+
+app.use('/image__LTGM', express.static(path.join(__dirname, 'public/image__item--laptopgaming')));
+
+app.use('/image__Mouse', express.static(path.join(__dirname, 'public/image__item--mouse')));
