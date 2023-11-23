@@ -35,6 +35,10 @@ app.get('/signup', (req, res) => {
     res.sendFile(__dirname + '/login-signup/sign_up.html');
 });
 
+app.get('/cart', (req, res) => {
+    res.sendFile(__dirname + '/Cart/Cart.html');
+});
+
 app.get('/PC', (req, res) => {
     res.sendFile(__dirname + '/select__item--PC/PC.html');
 });
@@ -147,6 +151,30 @@ app.get('/Chuot_Gaming_Havit_MS878', (req, res) => {
     res.sendFile(__dirname + '/select__item--mouse/item__5.html');
 });
 
+app.get('/KEYBOARD', (req, res) => {
+    res.sendFile(__dirname + '/select__item--keyboard/Keyboard.html');
+});
+
+app.get('/KEYBOARD__1', (req, res) => {
+    res.sendFile(__dirname + '/select__item--keyboard/item__1.html');
+});
+
+app.get('/KEYBOARD__2', (req, res) => {
+    res.sendFile(__dirname + '/select__item--keyboard/item__2.html');
+});
+
+app.get('/KEYBOARD__3', (req, res) => {
+    res.sendFile(__dirname + '/select__item--keyboard/item__3.html');
+});
+
+app.get('/KEYBOARD__4', (req, res) => {
+    res.sendFile(__dirname + '/select__item--keyboard/item__4.html');
+});
+
+app.get('/KEYBOARD__5', (req, res) => {
+    res.sendFile(__dirname + '/select__item--keyboard/item__5.html');
+});
+
 // Login 
 
 app.post('/login', (req, res) => {
@@ -202,6 +230,10 @@ app.use(express.static(__dirname + '/select__item--laptopgaming'));
 
 app.use(express.static(__dirname + '/select__item--mouse'));
 
+app.use(express.static(__dirname + '/select__item--keyboard'));
+
+app.use(express.static(__dirname + '/Cart'));
+
 app.use('/images', express.static(path.join(__dirname, 'public/image')));
 
 app.use('/image__LT', express.static(path.join(__dirname, 'public/image__item--laptop')));
@@ -209,3 +241,5 @@ app.use('/image__LT', express.static(path.join(__dirname, 'public/image__item--l
 app.use('/image__LTGM', express.static(path.join(__dirname, 'public/image__item--laptopgaming')));
 
 app.use('/image__Mouse', express.static(path.join(__dirname, 'public/image__item--mouse')));
+
+app.use('/image__Keyboard', express.static(path.join(__dirname, 'public/image__item--keyboard')));
