@@ -175,6 +175,42 @@ app.get('/KEYBOARD__5', (req, res) => {
     res.sendFile(__dirname + '/select__item--keyboard/item__5.html');
 });
 
+app.get('/SCREEN', (req, res) => {
+    res.sendFile(__dirname + '/select__item--screen/Screen.html');
+});
+
+app.get('/SCREEN__1', (req, res) => {
+    res.sendFile(__dirname + '/select__item--screen/item__1.html');
+});
+
+app.get('/RAM', (req, res) => {
+    res.sendFile(__dirname + '/select__item--ram/Ram.html');
+});
+
+app.get('/RAM__1', (req, res) => {
+    res.sendFile(__dirname + '/select__item--ram/item__1.html');
+});
+
+app.get('/HARDDRIVE', (req, res) => {
+    res.sendFile(__dirname + '/select__item--harddrive/Harddrive.html');
+});
+
+app.get('/HARDDRIVE__1', (req, res) => {
+    res.sendFile(__dirname + '/select__item--harddrive/item__1.html');
+});
+
+app.get('/HARDDRIVE__2', (req, res) => {
+    res.sendFile(__dirname + '/select__item--harddrive/item__2.html');
+});
+
+app.get('/VGA', (req, res) => {
+    res.sendFile(__dirname + '/select__item--vga/VGA.html');
+});
+
+app.get('/VGA__1', (req, res) => {
+    res.sendFile(__dirname + '/select__item--vga/item__1.html');
+});
+
 // Login 
 
 app.post('/login', (req, res) => {
@@ -234,6 +270,14 @@ app.use(express.static(__dirname + '/select__item--keyboard'));
 
 app.use(express.static(__dirname + '/Cart'));
 
+app.use(express.static(__dirname + '/select__item--screen'));
+
+app.use(express.static(__dirname + '/select__item--ram'));
+
+app.use(express.static(__dirname + '/select__item--harddrive'));
+
+app.use(express.static(__dirname + '/select__item--vga'));
+
 app.use('/images', express.static(path.join(__dirname, 'public/image')));
 
 app.use('/image__LT', express.static(path.join(__dirname, 'public/image__item--laptop')));
@@ -243,3 +287,13 @@ app.use('/image__LTGM', express.static(path.join(__dirname, 'public/image__item-
 app.use('/image__Mouse', express.static(path.join(__dirname, 'public/image__item--mouse')));
 
 app.use('/image__Keyboard', express.static(path.join(__dirname, 'public/image__item--keyboard')));
+
+app.use('/image__Screen', express.static(path.join(__dirname, 'public/image__item--screen')));
+
+app.use('/image__Ram', express.static(path.join(__dirname, 'public/image__item--ram')));
+
+app.use('/image__Harddrive', express.static(path.join(__dirname, 'public/image__item--harddrive')));
+
+app.use('/image__VGA', express.static(path.join(__dirname, 'public/image__item--vga')));
+
+
