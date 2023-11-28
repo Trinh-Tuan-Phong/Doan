@@ -236,6 +236,66 @@
             <div class="sectionPC__option">
                 <div class="option__body">
                     
+                    <div class="option__filter">
+                        <select id="brand" onchange="filterProducts()">
+                            <option value="all">Hãng</option>
+                            <option value="MSI">MSI</option>
+                            <option value="Asus">Asus</option>
+                            <option value="Acer">Acer</option>
+                            <option value="Lenovo">Lenovo</option>
+                        </select>
+    
+                        <select id="cpu" onchange="filterProducts()">
+                            <option value="all">CPU</option>
+                            <option value="i5">Core i5</option>
+                            <option value="i7">Core i7</option>
+                            <option value="i9">Core i9</option>
+                            <option value="r9">Ryzen 9</option>
+                            <option value="r7">Ryzen 7</option>
+                        </select>
+
+                        <select id="resol" onchange="filterProducts()" style="display: none;">
+                            <option value="all">Độ phân giải</option>
+                            <option value="2k">2k (2560 x 1440)</option>
+                            <option value="4k">4k (3840 x 2160)</option>
+                            <option value="fullhd">Full HD (1920 x 1080)</option>
+                        </select>
+
+                        <select id="capacity" onchange="filterProducts()" style="display: none;">
+                            <option value="all">Dung lượng</option>
+                            <option value="500GB">500GB</option>
+                            <option value="512GB">512GB</option>
+                            <option value="960GB">960GB</option>
+                            <option value="1TB">1TB</option>
+                            <option value="2TB">2TB</option>
+                            <option value="6TB">6TB</option>
+                        </select>
+
+                        <select id="current" onchange="filterProducts()" style="display: none;">
+                            <option value="all">Dòng VGA</option>
+                            <option value="GT">GT</option>
+                            <option value="GTX">GTX</option>
+                        </select>
+
+                        <select id="price-min" onchange="filterProducts()">
+                            <option value="0">Giá từ</option>
+                            <option value="10000000">10.000.000</option>
+                            <option value="15000000">15.000.000</option>
+                            <option value="30000000">30.000.000</option>
+                            <option value="50000000">50.000.000</option>
+                            <option value="70000000">70.000.000</option>
+                        </select>
+
+                        <select id="price-max" onchange="filterProducts()">
+                            <option value="99999">Giá đến</option>
+                            <option value="10000000">10.000.000</option>
+                            <option value="15000000">15.000.000</option>
+                            <option value="30000000">30.000.000</option>
+                            <option value="50000000">50.000.000</option>
+                            <option value="70000000">70.000.000</option>
+                        </select>
+                    </div>
+                    
                     <div class="arrange">
                         <label for="sortOrder">Sắp xếp:</label>
                         <select id="sortOrder" onchange="sortProducts()">
@@ -245,7 +305,7 @@
                     </div>
 
                     <ul id="option">
-                        <div data-price="69990000" class="option__select">
+                        <div data-cpu="i9" data-brand="MSI" data-price="69990000" class="option__select product">
                             <a href="/Laptop_gaming_MSI_Stealth_GS77_12UHS_250VN">
                                 <div class="option__img--1 img"></div>
                                 <h4>Laptop gaming MSI Stealth GS77 12UHS 250VN</h4>
@@ -256,7 +316,7 @@
                             </a>
                         </div>
 
-                        <div data-price="36990000" class="option__select">
+                        <div data-cpu="i5" data-brand="Acer" data-price="36990000" class="option__select product">
                             <a href="/Laptop_gaming_Acer_Predator_Helios_Neo_16_PHN16_71_53M7">
                                 <div class="option__img--2 img"></div>
                                 <h4>Laptop gaming Acer Predator Helios Neo 16 PHN16 71 53M7</h4>
@@ -267,7 +327,7 @@
                             </a>
                         </div>
                         
-                        <div data-price="44990000" class="option__select">
+                        <div data-cpu="r9" data-brand="Asus" data-price="44990000" class="option__select product">
                             <a href="/Laptop_gaming_ASUS_ROG_Zephyrus_G15_GA503RS_LN892W">
                                 <div class="option__img--3 img"></div>
                                 <h4>Laptop gaming ASUS ROG Zephyrus G15 GA503RS LN892W</h4>
@@ -278,24 +338,57 @@
                             </a>
                         </div>
 
-                        <div data-price="30490000" class="option__select">
+                        <div data-cpu="r7" data-brand="Asus" data-price="26490000" class="option__select product">
                             <a href="/Laptop_gaming_ASUS_TUF_A15_FA507NU_LP031W">
                                 <div class="option__img--4 img"></div>
                                 <h4>Laptop gaming ASUS TUF A15 FA507NU LP031W</h4>
                                 <div class="option__price">
-                                    <h5>26.490.000₫</h5>
-                                    <span>30.490.000₫</span>
+                                    <h5>30.490.000₫</h5>
+                                    <span>26.490.000₫</span>
                                 </div>
                             </a>
                         </div>
 
-                        <div data-price="19990000" class="option__select">
+                        <div data-cpu="i7" data-brand="MSI" data-price="19990000" class="option__select product">
                             <a href="/Laptop_gaming_MSI_GF63_12UC_887VN">
                                 <div class="option__img--5 img"></div>
                                 <h4>Laptop gaming MSI GF63 12UC 887VN</h4>
                                 <div class="option__price">
                                     <h5>20.990.000₫</h5>
                                     <span>19.990.000₫</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-cpu="i5" data-brand="Lenovo" data-price="18990000" class="option__select product">
+                            <a href="">
+                                <div class="option__img--6 img"></div>
+                                <h4>Laptop gaming Lenovo LOQ 15IRH8 82XV00QQVN</h4>
+                                <div class="option__price">
+                                    <h5>20.990.000₫</h5>
+                                    <span>18.990.000₫</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-cpu="i7" data-brand="Acer" data-price="30990000" class="option__select product">
+                            <a href="">
+                                <div class="option__img--7 img"></div>
+                                <h4>Laptop gaming Acer Predator Helios 300 PH315 55 76KG</h4>
+                                <div class="option__price">
+                                    <h5>48.490.000₫</h5>
+                                    <span>30.990.000₫</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-cpu="i5" data-brand="MSI" data-price="24990000" class="option__select product">
+                            <a href="">
+                                <div class="option__img--8 img"></div>
+                                <h4>Laptop Gaming MSI Katana 15 B13VEK 1205VN</h4>
+                                <div class="option__price">
+                                    <h5>28.990.000₫</h5>
+                                    <span>24.990.000₫</span>
                                 </div>
                             </a>
                         </div>

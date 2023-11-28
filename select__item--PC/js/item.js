@@ -41,3 +41,23 @@ prev.addEventListener('click', () => {
 	setCurrent(currentIndex)
 })
 
+
+function filterProducts() {
+    // Lấy giá trị của lựa chọn
+    var selectedBrand = document.getElementById('brand').value;
+
+    // Lấy danh sách tất cả sản phẩm
+    var products = document.getElementsByClassName('product');
+
+    // Lặp qua từng sản phẩm và ẩn hoặc hiển thị tùy thuộc vào lựa chọn
+    for (var i = 0; i < products.length; i++) {
+        var product = products[i];
+        var productBrand = product.getAttribute('data-brand');
+
+        if (selectedBrand === 'all' || selectedBrand === productBrand) {
+            product.classList.remove('hidden');
+        } else {
+            product.classList.add('hidden');
+        }
+    }
+}

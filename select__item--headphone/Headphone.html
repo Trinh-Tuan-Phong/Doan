@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Bàn phím PVN uy tín - chất lượng</title>
+    <title>VGA - Card màn hình, card đồ họa chính hãng, giá rẻ PVN</title>
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/css/keyboard.css">
+    <link rel="stylesheet" href="/css/headphone.css">
     <link rel="icon" href="/image/logo_phongvn.png">
 
 </head>
@@ -226,24 +226,21 @@
 
                 /
 
-                <span>Keyboard - bàn phím máy tính</span>
+                <span>VGA - Card màn hình</span>
             </div>
 
-            <div class="sectionPC__img">
-                <img src="/image__item--keyboard/itemKeyboard__banner.webp" alt="">
+            <div class="sectionPC__img" style="display: none;">
+                <img src="/image__item--harddrive/Harddrive__banner.webp" alt="">
             </div>
 
             <div class="sectionPC__option">
                 <div class="option__body">
-                    
+
                     <div class="option__filter">
                         <select id="brand" onchange="filterProducts()">
-                            <option value="all">Hãng</option>
-                            <option value="MonsGeek">MonsGeek</option>
-                            <option value="Asus">Asus</option>
-                            <option value="G.Rapoo">Rapoo</option>
-                            <option value="DareU">DareU</option>
-                            <option value="E-Dra">E-Dra</option>
+                            <option value="all">Màu</option>
+                            <option value="White">Trăng</option>
+                            <option value="Black">Đen</option>
                         </select>
     
                         <select id="cpu" onchange="filterProducts()" style="display: none;">
@@ -262,16 +259,21 @@
                             <option value="fullhd">Full HD (1920 x 1080)</option>
                         </select>
 
+                        <select id="capacity" onchange="filterProducts()" style="display: none";>
+                            <option value="all">Dung lượng</option>
+                            <option value="500GB">500GB</option>
+                            <option value="512GB">512GB</option>
+                            <option value="960GB">960GB</option>
+                            <option value="1TB">1TB</option>
+                            <option value="2TB">2TB</option>
+                            <option value="6TB">6TB</option>
+                        </select>
+
                         <select id="current" onchange="filterProducts()">
                             <option value="all">Kết nối</option>
                             <option value="wire">Có dây</option>
                             <option value="wireless">Không dây</option>
-                        </select>
-
-                        <select id="capacity" onchange="filterProducts()" style="display: none;">
-                            <option value="all">Dung lượng</option>
-                            <option value="8GB">8GB</option>
-                            <option value="16GB">16GB</option>
+                            <option value="Bluetooth">Bluetooth</option>
                         </select>
 
                         <select id="price-min" onchange="filterProducts()">
@@ -288,13 +290,13 @@
                             <option value="99999">Giá đến</option>
                             <option value="500000">500.000</option>
                             <option value="1000000">1.000.000</option>
-                            <option value="2000000">2.000.000</option>
+                            <option value="1500000">1.500.000</option>
                             <option value="5000000">5.000.000</option>
                             <option value="8000000">8.000.000</option>
                             <option value="10000000">10.000.000</option>
                         </select>
                     </div>
-
+                    
                     <div class="arrange">
                         <label for="sortOrder">Sắp xếp:</label>
                         <select id="sortOrder" onchange="sortProducts()">
@@ -304,94 +306,91 @@
                     </div>
 
                     <ul id="option">
-                        <div data-brand="DareU" data-curr="wire" data-price="590000" class="option__select product">
-                            <a href="/KEYBOARD__1">
+                        <div data-curr="wire" data-brand="White" data-price="1090000" class="option__select product">
+                            <a href="/HEADPHONE__1">
                                 <div class="option__img--1 img"></div>
-                                <h4>Bàn phím cơ DareU EK75 White Black DareU Dream switch</h4>
+                                <h4>Tai nghe Asus ROG Cetra II Core Moonlight</h4>
                                 <div class="option__price">
-                                    <h5>699.000₫</h5>
-                                    <span>590.000₫</span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div data-brand="MonsGeek" data-curr="wire" data-price="2590000" class="option__select product">
-                            <a href="/KEYBOARD__2">
-                                <div class="option__img--2 img"></div>
-                                <h4>Bàn phím MonsGeek M1 QMK Black AKKO Switch v3 Cream Yellow Pro</h4>
-                                <div class="option__price">
-                                    <h5>2.799.000₫</h5>
-                                    <span>2.590.000₫</span>
-                                </div>
-                            </a>
-                        </div>
-                        
-                        <div data-brand="MonsGeek" data-curr="wire" data-price="2590000" class="option__select product">
-                            <a href="/KEYBOARD__3">
-                                <div class="option__img--3 img"></div>
-                                <h4>Bàn phím MonsGeek M1 QMK Silver AKKO Switch v3 Cream Yellow Pro</h4>
-                                <div class="option__price">
-                                    <h5>2.799.000₫  </h5>
-                                    <span>2.590.000₫</span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div data-brand="E-Dra" data-curr="wire" data-price="690000" class="option__select product">
-                            <a href="/KEYBOARD__4">
-                                <div class="option__img--4 img"></div>
-                                <h4>Bàn phím E-Dra EK387L RGB Red Switch</h4>
-                                <div class="option__price">
-                                    <h5>849.000₫</h5>
-                                    <span>690.000₫</span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div data-brand="DareU" data-curr="wireless" data-price="1090000" class="option__select product">
-                            <a href="/KEYBOARD__5">
-                                <div class="option__img--5 img"></div>
-                                <h4>Bàn phím cơ DareU EK75 Pro Triple Mode Black Firefly switch</h4>
-                                <div class="option__price">
-                                    <h5>1.290.000₫</h5>
+                                    <h5>1.799.000₫</h5>
                                     <span>1.090.000₫</span>
                                 </div>
                             </a>
                         </div>
 
-                        <div data-brand="Rapoo" data-curr="wireless" data-price="1590000" class="option__select product">
+                        <div data-curr="wire" data-brand="Black" data-price="1790000" class="option__select product">
                             <a href="">
-                                <div class="option__img--6 img"></div>
-                                <h4>Bàn phím Rapoo không dây V700-8A White Orange</h4>
+                                <div class="option__img--2 img"></div>
+                                <h4>Tai nghe Asus ROG Cetra RGB</h4>
                                 <div class="option__price">
                                     <h5>2.090.000₫</h5>
-                                    <span>1.590.000₫</span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div data-brand="Asus" data-curr="wire" data-price="1790000" class="option__select product">
-                            <a href="">
-                                <div class="option__img--7 img"></div>
-                                <h4>Bàn phím Asus ROG Strix Scope NX TKL DELUXE - Red Switch</h4>
-                                <div class="option__price">
-                                    <h5>3.390.000₫</h5>
                                     <span>1.790.000₫</span>
                                 </div>
                             </a>
                         </div>
 
-                        <div data-brand="DareU" data-curr="wire" data-price="990000" class="option__select product">
+                        <div data-curr="wire" data-brand="Black" data-price="1990000" class="option__select product">
                             <a href="">
-                                <div class="option__img--8 img"></div>
-                                <h4>Bàn phím cơ DareU EK1280 V2 RGB Red Switch</h4>
+                                <div class="option__img--3 img"></div>
+                                <h4>Tai nghe Asus ROG Delta Core</h4>
                                 <div class="option__price">
-                                    <h5>1.390.000₫</h5>
+                                    <h5>2.890.000₫</h5>
+                                    <span>1.990.000₫</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-curr="wire" data-brand="Black" data-price="1990000" class="option__select product">
+                            <a href="">
+                                <div class="option__img--4 img"></div>
+                                <h4>Tai Nghe Asus ROG Delta S Core</h4>
+                                <div class="option__price">
+                                    <span>1.990.000₫</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-curr="wire" data-brand="Black" data-price="1890000" class="option__select product">
+                            <a href="">
+                                <div class="option__img--5 img"></div>
+                                <h4>Tai nghe Asus ROG Strix Go Core</h4>
+                                <div class="option__price">
+                                    <h5>2.280.000₫</h5>
+                                    <span>1.890.000₫</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div data-curr="Bluetooth" data-brand="Black" data-price="790000" class="option__select product">
+                            <a href="">
+                                <div class="option__img--6 img"></div>
+                                <h4>Tai nghe Bluetooth Earbuds SoundPeats S5</h4>
+                                <div class="option__price">
+                                    <h5>890.000₫</h5>
+                                    <span>790.000₫</span>
+                                </div>
+                            </a>
+                        </div>
+                       
+                        <div data-curr="Bluetooth" data-brand="Black" data-price="990000" class="option__select product">
+                            <a href="">
+                                <div class="option__img--7 img"></div>
+                                <h4>Tai nghe Bluetooth Earbuds SoundPeats T3</h4>
+                                <div class="option__price">
+                                    <h5>1.090.000₫</h5>
                                     <span>990.000₫</span>
                                 </div>
                             </a>
                         </div>
 
+                        <div data-curr="wire" data-brand="White" data-price="1290000" class="option__select product">
+                            <a href="">
+                                <div class="option__img--8 img"></div>
+                                <h4>Tai nghe Cooler Master CH331 SF6 Chun Li</h4>
+                                <div class="option__price">
+                                    <span>1.290.000₫</span>
+                                </div>
+                            </a>
+                        </div>
                     </ul>
 
                 </div>

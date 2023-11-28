@@ -235,6 +235,66 @@
 
             <div class="sectionPC__option">
                 <div class="option__body">
+
+                    <div class="option__filter">
+                        <select id="brand" onchange="filterProducts()">
+                            <option value="all">Loại ổ cứng</option>
+                            <option value="SSD">SSD</option>
+                            <option value="HDD">HDD</option>
+                        </select>
+    
+                        <select id="cpu" onchange="filterProducts()" style="display: none;">
+                            <option value="all">CPU</option>
+                            <option value="i5">Core i5</option>
+                            <option value="i7">Core i7</option>
+                            <option value="i9">Core i9</option>
+                            <option value="r9">Ryzen 9</option>
+                            <option value="r7">Ryzen 7</option>
+                        </select>
+
+                        <select id="resol" onchange="filterProducts()" style="display: none";>
+                            <option value="all">Độ phân giải</option>
+                            <option value="2k">2k (2560 x 1440)</option>
+                            <option value="4k">4k (3840 x 2160)</option>
+                            <option value="fullhd">Full HD (1920 x 1080)</option>
+                        </select>
+
+                        <select id="capacity" onchange="filterProducts()">
+                            <option value="all">Dung lượng</option>
+                            <option value="500GB">500GB</option>
+                            <option value="512GB">512GB</option>
+                            <option value="960GB">960GB</option>
+                            <option value="1TB">1TB</option>
+                            <option value="2TB">2TB</option>
+                            <option value="6TB">6TB</option>
+                        </select>
+
+                        <select id="current" onchange="filterProducts()" style="display: none;">
+                            <option value="all">Dòng VGA</option>
+                            <option value="GT">GT</option>
+                            <option value="GTX">GTX</option>
+                        </select>
+
+                        <select id="price-min" onchange="filterProducts()">
+                            <option value="0">Giá từ</option>
+                            <option value="500000">500.000</option>
+                            <option value="1000000">1.000.000</option>
+                            <option value="2000000">2.000.000</option>
+                            <option value="5000000">5.000.000</option>
+                            <option value="8000000">8.000.000</option>
+                            <option value="10000000">10.000.000</option>
+                        </select>
+
+                        <select id="price-max" onchange="filterProducts()">
+                            <option value="99999">Giá đến</option>
+                            <option value="500000">500.000</option>
+                            <option value="1000000">1.000.000</option>
+                            <option value="2000000">2.000.000</option>
+                            <option value="5000000">5.000.000</option>
+                            <option value="8000000">8.000.000</option>
+                            <option value="10000000">10.000.000</option>
+                        </select>
+                    </div>
                     
                     <div class="arrange">
                         <label for="sortOrder">Sắp xếp:</label>
@@ -245,7 +305,7 @@
                     </div>
 
                     <ul id="option">
-                        <div data-price="1390000" class="option__select">
+                        <div data-capa="960GB" data-brand="SSD" data-price="1390000" class="option__select product">
                             <a href="/HARDDRIVE__1">
                                 <div class="option__img--1 img"></div>
                                 <h4>Ổ cứng SSD MSI Spatium S270 960GB SATA3</h4>
@@ -256,7 +316,7 @@
                             </a>
                         </div>
 
-                        <div data-price="1190000" class="option__select">
+                        <div data-capa="512GB" data-brand="SSD" data-price="1190000" class="option__select product">
                             <a href="">
                                 <div class="option__img--2 img"></div>
                                 <h4>Gigabyte SSD AORUS RGB M.2 NVMe 512GB</h4>
@@ -267,7 +327,7 @@
                             </a>
                         </div>
                         
-                        <div data-price="1190000" class="option__select">
+                        <div data-capa="500GB" data-brand="SSD" data-price="1190000" class="option__select product">
                             <a href="">
                                 <div class="option__img--3 img"></div>
                                 <h4>Ổ cứng SSD Kingston NV2 500GB M.2 PCIe NVMe Gen4</h4>
@@ -278,7 +338,7 @@
                             </a>
                         </div>
 
-                        <div data-price="1190000" class="option__select">
+                        <div data-capa="512GB" data-brand="SSD" data-price="1190000" class="option__select product">
                             <a href="">
                                 <div class="option__img--4 img"></div>
                                 <h4>Ổ Cứng SSD Gigabyte M.2 PCIe 512GB (GP-GSM2NE3512GNTD)</h4>
@@ -289,7 +349,7 @@
                             </a>
                         </div>
 
-                        <div data-price="1250000" class="option__select">
+                        <div data-capa="500GB" data-brand="SSD" data-price="1250000" class="option__select product">
                             <a href="">
                                 <div class="option__img--5 img"></div>
                                 <h4>Ổ Cứng SSD WD Blue SN570 500GB M.2 NVMe PCIe Gen3 (WDS500G3B0C)</h4>
@@ -300,7 +360,7 @@
                             </a>
                         </div>
 
-                        <div data-price="1150000" class="option__select">
+                        <div data-capa="1TB" data-brand="HDD" data-price="1150000" class="option__select product">
                             <a href="/HARDDRIVE__2">
                                 <div class="option__img--6 img"></div>
                                 <h4>Ổ Cứng HDD WD 1TB Blue 2.5" for Laptop</h4>
@@ -311,7 +371,7 @@
                             </a>
                         </div>
 
-                        <div data-price="1290000" class="option__select">
+                        <div data-capa="1TB" data-brand="HDD" data-price="1290000" class="option__select product">
                             <a href="">
                                 <div class="option__img--7 img"></div>
                                 <h4>Ổ Cứng HDD WD 1TB Blue</h4>
@@ -322,7 +382,7 @@
                             </a>
                         </div>
 
-                        <div data-price="5190000" class="option__select">
+                        <div data-capa="6TB" data-brand="HDD" data-price="5190000" class="option__select product">
                             <a href="">
                                 <div class="option__img--8 img"></div>
                                 <h4>Ổ Cứng HDD WD Red Plus 6TB 5400RPM</h4>
@@ -332,7 +392,7 @@
                             </a>
                         </div>
 
-                        <div data-price="3390000" class="option__select">
+                        <div data-capa="2TB" data-brand="HDD" data-price="3390000" class="option__select product">
                             <a href="">
                                 <div class="option__img--9 img"></div>
                                 <h4>Ổ Cứng HDD WD 2TB Black</h4>

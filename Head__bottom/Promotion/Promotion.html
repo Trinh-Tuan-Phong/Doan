@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khuyến mãi</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>PC PVN uy tín - chất lượng</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/css/PC.css">
+    <link rel="stylesheet" href="Promotion.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="/image/logo_phongvn.png">
-
 </head>
 <body>
     <div class="head">
@@ -37,20 +36,11 @@
                         </li>
                         <li>
                             <i class="fa-solid fa-cart-shopping"></i>
-                            <a href="" class="nav__link">Giỏ hàng</a>
+                            <a href="/cart" class="nav__link">Giỏ hàng</a>
                         </li>
                     </ul>
 
                 </nav>
-
-                <div class="nav__user" id="hidden__div">
-                    <a href="/login">
-                        <button class="btn__signup" id="hidden__btn">
-                            <i class="fa-solid fa-user"></i>
-                        </button>
-                    </a>
-                </div>
-
     
                 <input type="checkbox" name="" class="nav__input" id="nav__mobile--input">
     
@@ -78,7 +68,7 @@
                         </li>
 
                         <li>
-                            <a href="" class="mobile__bottom--link">
+                            <a href="#" class="mobile__bottom--link">
                                 <i class="fa-solid fa-tag"></i>
                                 <h4>Tổng hợp khuyến mãi</h4>
                             </a>
@@ -119,7 +109,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="" class="section__mobile--link">
+                            <a href="/LAPTOP" class="section__mobile--link">
                                 <i class="fa-solid fa-laptop"></i>
                                 <h5>Laptop chính hãng</h5>
                             </a>
@@ -181,13 +171,13 @@
             <div class="head__bottom--menu">
                 <ul>
                     <li>
-                        <a href="" class="head__bottom--link">
+                        <a href="/PROMOTION" class="head__bottom--link">
                             <i class="fa-solid fa-tag"></i>
                             <h4>Tổng hợp khuyến mãi</h4>
                         </a>
                     </li>
                     <li>
-                        <a href="" class="head__bottom--link">
+                        <a href="/NEWS" class="head__bottom--link">
                             <i class="fa-solid fa-newspaper"></i>
                             <h4>Tin tức công nghệ</h4>
                         </a>
@@ -199,11 +189,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" class="head__bottom--link">
+                        <a href="https://www.youtube.com/c/GEARVNofficial/videos" class="head__bottom--link">
                             <i class="fa-brands fa-youtube"></i>
                             <h4>Video</h4>
                         </a>
                     </li>
+
                     <li>
                         <a href="" class="head__bottom--link">
                             <i class="fa-solid fa-shield"></i>
@@ -218,180 +209,52 @@
 
     <div class="section">
         <div class="section__body">
-            <div class="sectionPC__link">
-                <a href="/">
-                    <i class="fa-solid fa-house"></i>
-                    <span>Trang chủ</span>
-                </a>
-
-                /
-
-                <span>PC bán chạy</span>
+            <div class="section__banner">
+                <div class="banner__promotion"></div>
             </div>
+            <div class="section__content">
+                <h3>KHUYẾN MÃI HOT</h3>
 
-            <div class="sectionPC__img">
-                <img src="/image/imgPC_1.jpg" alt="">
-            </div>
-
-            <div class="sectionPC__option">
-                <div class="option__body">
-                    
-                    <div class="option__filter">    
-
-                        <select id="brand" onchange="filterProducts()" style="display: none;">
-                            <option value="all">Hãng</option>
-                            <option value="LG">LG</option>
-                            <option value="Asus">Asus</option>
-                            <option value="Dell">Dell</option>
-                            <option value="Lenovo">Lenovo</option>
-                        </select>
-
-                        <select id="cpu" onchange="filterProducts()">
-                            <option value="all">CPU</option>
-                            <option value="i5">Core i5</option>
-                            <option value="i7">Core i7</option>
-                            <option value="i9">Core i9</option>
-                            <option value="r5">Ryzen 5</option>
-                        </select>
-
-                        <select id="resol" onchange="filterProducts()" style="display: none;">
-                            <option value="all">Độ phân giải</option>
-                            <option value="2k">2k (2560 x 1440)</option>
-                            <option value="4k">4k (3840 x 2160)</option>
-                            <option value="fullhd">Full HD (1920 x 1080)</option>
-                        </select>
-
-                        <select id="capacity" onchange="filterProducts()" style="display: none;">
-                            <option value="all">Dung lượng</option>
-                            <option value="500GB">500GB</option>
-                            <option value="512GB">512GB</option>
-                            <option value="960GB">960GB</option>
-                            <option value="1TB">1TB</option>
-                            <option value="2TB">2TB</option>
-                            <option value="6TB">6TB</option>
-                        </select>
-
-                        <select id="current" onchange="filterProducts()" style="display: none;">
-                            <option value="all">Dòng VGA</option>
-                            <option value="GT">GT</option>
-                            <option value="GTX">GTX</option>
-                        </select>
-
-                        <select id="price-min" onchange="filterProducts()">
-                            <option value="0">Giá từ</option>
-                            <option value="5000000">5.000.000</option>
-                            <option value="10000000">10.000.000</option>
-                            <option value="30000000">30.000.000</option>
-                            <option value="60000000">60.000.000</option>
-                            <option value="100000000">100.000.000</option>
-                            <option value="130000000">130.000.000</option>
-
-                        </select>
-
-                        <select id="price-max" onchange="filterProducts()">
-                            <option value="99999">Giá đến</option>
-                            <option value="5000000">5.000.000</option>
-                            <option value="10000000">10.000.000</option>
-                            <option value="30000000">30.000.000</option>
-                            <option value="60000000">60.000.000</option>
-                            <option value="100000000">100.000.000</option>
-                            <option value="130000000">130.000.000</option>
-                        </select>
-                    </div>
-                    
-                    <div class="arrange">
-                        <label for="sortOrder">Sắp xếp:</label>
-                        <select id="sortOrder" onchange="sortProducts()">
-                          <option value="asc">Cao đến thấp</option>
-                          <option value="desc">Thấp đến cao</option>
-                        </select>
+                <div class="item__promotion">
+                    <div class="item__pro">
+                        <div class="item__left item">
+                            <img src="/image__promotion/Promotion__img1.webp" alt="">
+                            <h5>ĐỈNH CAO CẤU HÌNH - GIẢM GIÁ TỐI ĐA</h5>
+                            <h5>06/11 - 30/11/2023</h5>
+                        </div>
+                        <div class="item__right item">
+                            <img src="/image__promotion/Promotion__img2.webp" alt="">
+                            <h5>HỖ TRỢ TRẢ GÓP - 0% TRẢ TRƯỚC</h5>
+                            <h5>1/11 - 30/12/2023</h5>
+                        </div>
                     </div>
 
-                    <ul id="option">
-                        <div data-cpu="i5" data-price="14490000"  class="option__select product">
-                            <a href="/PC_GVN_Intel_i5-12400F">
-                                <div class="option__img--1 img"></div>
-                                <h4>PC PVN Gaming Intel i5-12400F/ VGA GTX 1660 Super (H610)</h4>
-                                <div class="option__price">
-                                    <h5>15.320.000₫</h5>
-                                    <span>14.490.000₫</span>
-                                </div>
-                            </a>
+                    <div class="item__pro">
+                        <div class="item__left item">
+                            <img src="/image__promotion/Promotion__img3.webp" alt="">
+                            <h5>HỌC ĐỈNH CHƠI VUI</h5>
+                            <h5>06/11 - 30/11/2023</h5>
                         </div>
+                        <div class="item__right item">
+                            <img src="/image__promotion/Promotion__img4.webp" alt="">
+                            <h5>LAPTOP CHỈ TỪ 8.99 TRIỆU</h5>
+                            <h5>1/11 - 30/12/2023</h5>
+                        </div>
+                    </div>
 
-                        <div data-cpu="i5" data-price="30490000" class="option__select product">
-                            <a href="/PC_PVN_Gaming_Intel_i5-13400F">
-                                <div class="option__img--2 img"></div>
-                                <h4>PC PVN Gaming Intel i5-13400F/ VGA RTX 4060 Ti</h4>
-                                <div class="option__price">
-                                    <span>30.490.000₫</span>
-                                </div>
-                            </a>
-                        </div>
-                        
-                         <div data-cpu="r5" data-price="25990000" class="option__select product">
-                            <a href="/PC_PVN_AMD_R5-7600">
-                                <div class="option__img--3 img"></div>
-                                <h4>PC PVN AMD R5-7600/ VGA RTX 4060</h4>
-                                <div class="option__price">
-                                    <h5>26.180.000₫</h5>
-                                    <span>25.990.000₫</span>
-                                </div>
-                            </a>
-                        </div>
 
-                        <div data-cpu="i9" data-price="130000000" class="option__select product">
-                            <a href="/PC_PVN_x_ASUS_EVANGELION_2">
-                                <div class="option__img--4 img"></div>
-                                <h4>PC PVN x ASUS EVANGELION 2 (Intel i9-14900K/ VGA RTX 4090)</h4>
-                                <div class="option__price">
-                                    <span>130.000.000₫</span>
-                                </div>
-                            </a>
+                    <div class="item__pro">
+                        <div class="item__left item">
+                            <img src="/image__promotion/Promotion__img5.webp" alt="">
+                            <h5>MUA CPU AMD RYZEN 5 7600X TẶNG KÈM BALO AMD</h5>
+                            <h5>06/11 - 30/11/2023</h5>
                         </div>
-
-                        <div data-cpu="i7" data-price="33920000" class="option__select product">
-                            <a href="/PC_PVN_Gaming_Intel_i7-13700F">
-                                <div class="option__img--5 img"></div>
-                                <h4>PC PVN Gaming Intel i7-13700F/ VGA RTX 4060 Ti</h4>
-                                <div class="option__price">
-                                    <span>33.920.000₫</span>
-                                </div>
-                            </a>
+                        <div class="item__right item">
+                            <img src="/image__promotion/Promotion__img6.webp" alt="">
+                            <h5>MUA LAPTOP TẶNG VOUCHER 600K CHO MÀN HÌNH LG</h5>
+                            <h5>1/11 - 30/12/2023</h5>
                         </div>
-
-                        <div data-cpu="r5" data-price="13990000" class="option__select product">
-                            <a href="/PC_PVN_AMD_R5-7600.">
-                                <div class="option__img--3 img"></div>
-                                <h4>PC PVN AMD R5-7600/ VGA RTX 2060</h4>
-                                <div class="option__price">
-                                    <h5>26.180.000₫</h5>
-                                    <span>14.990.000₫</span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div data-cpu="i5" data-price="29010000" class="option__select product">
-                            <a href="/PC_PVN_Intel_i5-13600KF">
-                                <div class="option__img--6 img"></div>
-                                <h4>PC PVN Gaming Intel i5-13600KF/ VGA RTX 3060</h4>
-                                <div class="option__price">
-                                    <span>29.010.000₫</span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div data-cpu="i7" data-price="61380000" class="option__select product">
-                            <a href="/PC_PVN_Gaming_Intel_i7-13700k">
-                                <div class="option__img--7 img"></div>
-                                <h4>PC PVN Gaming Intel i7-13700K/ VGA RTX 4070 Ti</h4>
-                                <div class="option__price">
-                                    <span>61.380.000₫</span>
-                                </div>
-                            </a>
-                        </div>
-                    </ul>
-
+                    </div>
                 </div>
             </div>
         </div>
@@ -427,8 +290,5 @@
             </div>
         </div>
     </div>
-
-
-    <script src="/js/PC.js"></script>
 </body>
 </html>

@@ -48,19 +48,7 @@
     padding   : 10px 0;
 }
 
-#option {
-    display        : flex;
-    flex-wrap      : wrap;
-    justify-content: space-between;
-}
 
-.option__select {
-    border       : 1px solid rgb(218, 218, 218);
-    border-radius: 5px;
-    padding      : 10px;
-    width        : 250px;
-    margin-bottom: 10px;
-}
 
 .option__img--1 {
     background: url("/image/img_10.webp") no-repeat;
@@ -118,9 +106,6 @@
     color          : gray;
     text-decoration: line-through;
 }
-
-
-
 
 
 /* Table */

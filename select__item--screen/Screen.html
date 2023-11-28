@@ -235,6 +235,65 @@
 
             <div class="sectionPC__option">
                 <div class="option__body">
+
+                    <div class="option__filter">
+                        <select id="brand" onchange="filterProducts()">
+                            <option value="all">Hãng</option>
+                            <option value="MSI">MSI</option>
+                            <option value="Asus">Asus</option>
+                            <option value="Dell">Dell</option>
+                            <option value="Lenovo">Lenovo</option>
+                            <option value="ViewSonic">ViewSonic</option>
+                        </select>
+    
+                        <select id="cpu" onchange="filterProducts()" style="display: none;">
+                            <option value="all">CPU</option>
+                            <option value="i5">Core i5</option>
+                            <option value="i7">Core i7</option>
+                            <option value="i9">Core i9</option>
+                            <option value="r9">Ryzen 9</option>
+                            <option value="r7">Ryzen 7</option>
+                        </select>
+
+                        <select id="resol" onchange="filterProducts()">
+                            <option value="all">Độ phân giải</option>
+                            <option value="2k">2k (2560 x 1440)</option>
+                            <option value="4k">4k (3840 x 2160)</option>
+                            <option value="fullhd">Full HD (1920 x 1080)</option>
+                        </select>
+
+                        <select id="capacity" onchange="filterProducts()" style="display: none;">
+                            <option value="all">Dung lượng</option>
+                            <option value="500GB">500GB</option>
+                            <option value="512GB">512GB</option>
+                            <option value="960GB">960GB</option>
+                            <option value="1TB">1TB</option>
+                            <option value="2TB">2TB</option>
+                            <option value="6TB">6TB</option>
+                        </select>
+
+                        <select id="current" onchange="filterProducts()" style="display: none;">
+                            <option value="all">Dòng VGA</option>
+                            <option value="GT">GT</option>
+                            <option value="GTX">GTX</option>
+                        </select>
+
+                        <select id="price-min" onchange="filterProducts()">
+                            <option value="0">Giá từ</option>
+                            <option value="2000000">2.000.000</option>
+                            <option value="5000000">5.000.000</option>
+                            <option value="8000000">8.000.000</option>
+                            <option value="10000000">10.000.000</option>
+                        </select>
+
+                        <select id="price-max" onchange="filterProducts()">
+                            <option value="99999">Giá đến</option>
+                            <option value="2000000">2.000.000</option>
+                            <option value="5000000">5.000.000</option>
+                            <option value="8000000">8.000.000</option>
+                            <option value="10000000">10.000.000</option>
+                        </select>
+                    </div>
                     
                     <div class="arrange">
                         <label for="sortOrder">Sắp xếp:</label>
@@ -245,7 +304,7 @@
                     </div>
 
                     <ul id="option">
-                        <div data-price="5090000" class="option__select">
+                        <div data-resol="fullhd" data-brand="Asus" data-price="5090000" class="option__select product">
                             <a href="">
                                 <div class="option__img--1 img"></div>
                                 <h4>Màn hình ASUS ProArt PA248QV-P 24" IPS 75Hz 16:10 chuyên đồ họa</h4>
@@ -256,7 +315,7 @@
                             </a>
                         </div>
 
-                        <div data-price="4690000" class="option__select">
+                        <div data-resol="fullhd" data-brand="MSI" data-price="4690000" class="option__select product">
                             <a href="">
                                 <div class="option__img--2 img"></div>
                                 <h4>Màn hình cong MSI OPTIX G27C4X 27" 250Hz FreeSync Premium chuyên game</h4>
@@ -267,7 +326,7 @@
                             </a>
                         </div>
                         
-                        <div data-price="5450000" class="option__select">
+                        <div data-resol="fullhd" data-brand="Lenovo" data-price="5450000" class="option__select product">
                             <a href="">
                                 <div class="option__img--3 img"></div>
                                 <h4>Màn hình Lenovo Legion Y25-30 25" IPS 240Hz G-Sync 1ms chuyên game</h4>
@@ -278,7 +337,7 @@
                             </a>
                         </div>
 
-                        <div data-price="5490000" class="option__select">
+                        <div data-resol="2k" data-brand="Lenovo" data-price="5490000" class="option__select product">
                             <a href="">
                                 <div class="option__img--4 img"></div>
                                 <h4>Màn hình Lenovo Q27q-20 27" IPS 2K 75Hz chuyên đồ họa</h4>
@@ -289,7 +348,7 @@
                             </a>
                         </div>
 
-                        <div data-price="8290000" class="option__select">
+                        <div data-resol="2k" data-brand="Asus" data-price="8290000" class="option__select product">
                             <a href="/SCREEN__1">
                                 <div class="option__img--1 img"></div>
                                 <h4>Màn hình ASUS ProArt PA278QV-P 27" IPS 2K 75Hz chuyên đồ họa</h4>
@@ -300,7 +359,7 @@
                             </a>
                         </div>
 
-                        <div data-price="7290000" class="option__select">
+                        <div data-resol="2k" data-brand="Asus" data-price="7290000" class="option__select product">
                             <a href="">
                                 <div class="option__img--5 img"></div>
                                 <h4>Màn hình ASUS ProArt PA278QV-P 27" IPS 2K 75Hz chuyên đồ họa</h4>
@@ -311,7 +370,7 @@
                             </a>
                         </div>
 
-                        <div data-price="6190000" class="option__select">
+                        <div data-resol="2k" data-brand="ViewSonic" data-price="6190000" class="option__select product">
                             <a href="">
                                 <div class="option__img--6 img"></div>
                                 <h4>Màn hình ViewSonic VX2728J-2K 27" Fast IPS 2K 180Hz HDR10 chuyên game</h4>
@@ -322,7 +381,7 @@
                             </a>
                         </div>
 
-                        <div data-price="5500000" class="option__select">
+                        <div data-resol="fullhd" data-brand="Dell" data-price="5500000" class="option__select product">
                             <a href="">
                                 <div class="option__img--7 img"></div>
                                 <h4>Màn hình Dell UltraSharp U2422H 24" IPS</h4>

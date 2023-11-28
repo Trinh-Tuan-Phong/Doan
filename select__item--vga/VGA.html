@@ -235,6 +235,68 @@
 
             <div class="sectionPC__option">
                 <div class="option__body">
+
+                    <div class="option__filter">
+                        <select id="brand" onchange="filterProducts()">
+                            <option value="all">Hãng</option>
+                            <option value="Asus">Asus</option>
+                            <option value="MSI">MSI</option>
+                            <option value="GIGABYTE">GIGABYTE</option>
+                            <option value="Palit">Palit</option>
+                        </select>
+    
+                        <select id="cpu" onchange="filterProducts()" style="display: none;">
+                            <option value="all">CPU</option>
+                            <option value="i5">Core i5</option>
+                            <option value="i7">Core i7</option>
+                            <option value="i9">Core i9</option>
+                            <option value="r9">Ryzen 9</option>
+                            <option value="r7">Ryzen 7</option>
+                        </select>
+
+                        <select id="resol" onchange="filterProducts()" style="display: none";>
+                            <option value="all">Độ phân giải</option>
+                            <option value="2k">2k (2560 x 1440)</option>
+                            <option value="4k">4k (3840 x 2160)</option>
+                            <option value="fullhd">Full HD (1920 x 1080)</option>
+                        </select>
+
+                        <select id="capacity" onchange="filterProducts()" style="display: none";>
+                            <option value="all">Dung lượng</option>
+                            <option value="500GB">500GB</option>
+                            <option value="512GB">512GB</option>
+                            <option value="960GB">960GB</option>
+                            <option value="1TB">1TB</option>
+                            <option value="2TB">2TB</option>
+                            <option value="6TB">6TB</option>
+                        </select>
+
+                        <select id="current" onchange="filterProducts()">
+                            <option value="all">Dòng VGA</option>
+                            <option value="GT">GT</option>
+                            <option value="GTX">GTX</option>
+                        </select>
+
+                        <select id="price-min" onchange="filterProducts()">
+                            <option value="0">Giá từ</option>
+                            <option value="500000">500.000</option>
+                            <option value="1000000">1.000.000</option>
+                            <option value="2000000">2.000.000</option>
+                            <option value="5000000">5.000.000</option>
+                            <option value="8000000">8.000.000</option>
+                            <option value="10000000">10.000.000</option>
+                        </select>
+
+                        <select id="price-max" onchange="filterProducts()">
+                            <option value="99999">Giá đến</option>
+                            <option value="500000">500.000</option>
+                            <option value="1000000">1.000.000</option>
+                            <option value="2000000">2.000.000</option>
+                            <option value="5000000">5.000.000</option>
+                            <option value="8000000">8.000.000</option>
+                            <option value="10000000">10.000.000</option>
+                        </select>
+                    </div>
                     
                     <div class="arrange">
                         <label for="sortOrder">Sắp xếp:</label>
@@ -245,7 +307,7 @@
                     </div>
 
                     <ul id="option">
-                        <div data-price="1190000" class="option__select">
+                        <div data-curr="GT" data-brand="Palit" data-price="1190000" class="option__select product">
                             <a href="/VGA__1">
                                 <div class="option__img--1 img"></div>
                                 <h4>Card màn hình Palit GeForce GT 730 2G</h4>
@@ -256,7 +318,7 @@
                             </a>
                         </div>
 
-                        <div data-price="1550000" class="option__select">
+                        <div data-curr="GT" data-brand="Asus" data-price="1550000" class="option__select product">
                             <a href="">
                                 <div class="option__img--2 img"></div>
                                 <h4>Card màn hình ASUS GeForce GT 730 2G (SL-2GD5-BRK)</h4>
@@ -267,7 +329,7 @@
                             </a>
                         </div>
 
-                        <div data-price="2290000" class="option__select">
+                        <div data-curr="GT" data-brand="Palit" data-price="2290000" class="option__select product">
                             <a href="">
                                 <div class="option__img--3 img"></div>
                                 <h4>Card màn hình Palit GeForce GT 1030 2GB DDR4</h4>
@@ -278,7 +340,7 @@
                             </a>
                         </div>
 
-                        <div data-price="2290000" class="option__select">
+                        <div data-curr="GT" data-brand="Asus" data-price="2290000" class="option__select product">
                             <a href="">
                                 <div class="option__img--4 img"></div>
                                 <h4>Card màn hình ASUS Phoenix GeForce GT 1030 OC 2GB (PH-GT1030-O2G)</h4>
@@ -289,7 +351,7 @@
                             </a>
                         </div>
 
-                        <div data-price="2490000" class="option__select">
+                        <div data-curr="GT" data-brand="GIGABYTE" data-price="2490000" class="option__select product">
                             <a href="">
                                 <div class="option__img--5 img"></div>
                                 <h4>Card màn hình GIGABYTE GeForce GT 1030 Low Profile D4 2G (GV-N1030D4-2GL)</h4>
@@ -300,7 +362,7 @@
                             </a>
                         </div>
 
-                        <div data-price="2490000" class="option__select">
+                        <div data-curr="GT" data-brand="GIGABYTE" data-price="2490000" class="option__select product">
                             <a href="">
                                 <div class="option__img--6 img"></div>
                                 <h4>Card màn hình GIGABYTE GeForce GT 1030 OC 2G (GV-N1030OC-2GI)</h4>
@@ -311,7 +373,7 @@
                             </a>
                         </div>
                        
-                        <div data-price="3790000" class="option__select">
+                        <div data-curr="GTX" data-brand="MSI" data-price="3790000" class="option__select product">
                             <a href="">
                                 <div class="option__img--7 img"></div>
                                 <h4>Card màn hình MSI GeForce GTX 1650 Ventus XS 4GB OC V1 D6</h4>
@@ -322,7 +384,7 @@
                             </a>
                         </div>
 
-                        <div data-price="3890000" class="option__select">
+                        <div data-curr="GTX" data-brand="Asus" data-price="3890000" class="option__select product">
                             <a href="">
                                 <div class="option__img--8 img"></div>
                                 <h4>Card màn hình ASUS Dual GeForce GTX 1650 4GB GDDR6 EVO</h4>

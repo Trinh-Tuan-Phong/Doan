@@ -30,7 +30,7 @@
 }
 
 .sectionPC__img img {
-    height       : 265px;
+    height       : 240px;
     width        : 100%;
     border-radius: 5px;
     object-fit   : cover;
@@ -63,35 +63,39 @@
 }
 
 .option__img--1 {
-    background: url("/image__item--keyboard/item1Keyboard__img1.webp") no-repeat;
+    background: url("/image__item--headphone/Heaphone__img1.webp") no-repeat;
 }
 
 .option__img--2 {
-    background: url("/image__item--keyboard/item1Keyboard__img2.jpg") no-repeat;
+    background: url("/image__item--headphone/Heaphone__img2.jpg") no-repeat;
 }
 
 .option__img--3 {
-    background: url("/image__item--keyboard/item1Keyboard__img3.webp") no-repeat;
+    background: url("/image__item--headphone/Heaphone__img3.jpg") no-repeat;
 }
 
 .option__img--4 {
-    background: url("/image__item--keyboard/item1Keyboard__img4.jpg") no-repeat;
+    background: url("/image__item--headphone/Heaphone__img4.gif") no-repeat;
 }
 
 .option__img--5 {
-    background: url("/image__item--keyboard/item1Keyboard__img5.webp") no-repeat;
+    background: url("/image__item--headphone/Heaphone__img5.jpg") no-repeat;
 }
 
 .option__img--6 {
-    background: url("/image__item--keyboard/KB__img1.webp") no-repeat;
+    background: url("/image__item--headphone/Heaphone__img6.webp") no-repeat;
 }
 
 .option__img--7 {
-    background: url("/image__item--keyboard/KB__img2.webp") no-repeat;
+    background: url("/image__item--headphone/Heaphone__img7.webp") no-repeat;
 }
 
 .option__img--8 {
-    background: url("/image__item--keyboard/KB__img3.webp") no-repeat;
+    background: url("/image__item--headphone/Heaphone__img8.jpg") no-repeat;
+}
+
+.option__img--9 {
+    background: url("/image__item--headphone/Harddrive__img9.jpg") no-repeat;
 }
 
 .img {

@@ -211,6 +211,23 @@ app.get('/VGA__1', (req, res) => {
     res.sendFile(__dirname + '/select__item--vga/item__1.html');
 });
 
+app.get('/HEADPHONE', (req, res) => {
+    res.sendFile(__dirname + '/select__item--headphone/Headphone.html');
+});
+
+app.get('/HEADPHONE__1', (req, res) => {
+    res.sendFile(__dirname + '/select__item--headphone/item__1.html');
+});
+
+app.get('/PROMOTION', (req, res) => {
+    res.sendFile(__dirname + '/Head__bottom/Promotion/Promotion.html');
+});
+
+app.get('/NEWS', (req, res) => {
+    res.sendFile(__dirname + '/Head__bottom/News/News.html');
+});
+
+
 // Login 
 
 app.post('/login', (req, res) => {
@@ -278,6 +295,12 @@ app.use(express.static(__dirname + '/select__item--harddrive'));
 
 app.use(express.static(__dirname + '/select__item--vga'));
 
+app.use(express.static(__dirname + '/select__item--headphone'));
+
+app.use(express.static(__dirname + '/Head__bottom/Promotion'));
+
+app.use(express.static(__dirname + '/Head__bottom/News'));
+
 app.use('/images', express.static(path.join(__dirname, 'public/image')));
 
 app.use('/image__LT', express.static(path.join(__dirname, 'public/image__item--laptop')));
@@ -295,5 +318,12 @@ app.use('/image__Ram', express.static(path.join(__dirname, 'public/image__item--
 app.use('/image__Harddrive', express.static(path.join(__dirname, 'public/image__item--harddrive')));
 
 app.use('/image__VGA', express.static(path.join(__dirname, 'public/image__item--vga')));
+
+app.use('/image__Headphone', express.static(path.join(__dirname, 'public/image__item--headphone')));
+
+app.use('/image__Promotion', express.static(path.join(__dirname, 'public/image__promotion')));
+
+app.use('/image__News', express.static(path.join(__dirname, 'public/image__news')));
+
 
 
