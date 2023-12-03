@@ -227,6 +227,48 @@ app.get('/NEWS', (req, res) => {
     res.sendFile(__dirname + '/Head__bottom/News/News.html');
 });
 
+app.get('/POLICY', (req, res) => {
+    res.sendFile(__dirname + '/Policy/Policy.html');
+});
+
+app.get('/SOUND', (req, res) => {
+    res.sendFile(__dirname + '/select__item--sound/Sound.html');
+});
+
+app.get('/SOUND__1', (req, res) => {
+    res.sendFile(__dirname + '/select__item--sound/item__1.html');
+});
+
+app.get('/SOUND__2', (req, res) => {
+    res.sendFile(__dirname + '/select__item--sound/item__2.html');
+});
+
+app.get('/HEATSINKBASE', (req, res) => {
+    res.sendFile(__dirname + '/select__item--heatsinkbase/heatsinkbase.html');
+});
+
+app.get('/HEATSINKBASE__1', (req, res) => {
+    res.sendFile(__dirname + '/select__item--heatsinkbase/item__1.html');
+});
+
+app.get('/HDMI', (req, res) => {
+    res.sendFile(__dirname + '/select__item--hdmi/Hdmi.html');
+});
+
+app.get('/HDMI__1', (req, res) => {
+    res.sendFile(__dirname + '/select__item--hdmi/item__1.html');
+});
+
+app.get('/WEBCAM', (req, res) => {
+    res.sendFile(__dirname + '/select__item--webcam/Webcam.html');
+});
+
+app.get('/WEBCAM__1', (req, res) => {
+    res.sendFile(__dirname + '/select__item--webcam/item__1.html');
+});
+
+
+
 
 // Login 
 
@@ -301,6 +343,16 @@ app.use(express.static(__dirname + '/Head__bottom/Promotion'));
 
 app.use(express.static(__dirname + '/Head__bottom/News'));
 
+app.use(express.static(__dirname + '/Policy'));
+
+app.use(express.static(__dirname + '/select__item--sound'));
+
+app.use(express.static(__dirname + '/select__item--heatsinkbase'));
+
+app.use(express.static(__dirname + '/select__item--hdmi'));
+
+app.use(express.static(__dirname + '/select__item--webcam'));
+
 app.use('/images', express.static(path.join(__dirname, 'public/image')));
 
 app.use('/image__LT', express.static(path.join(__dirname, 'public/image__item--laptop')));
@@ -324,6 +376,19 @@ app.use('/image__Headphone', express.static(path.join(__dirname, 'public/image__
 app.use('/image__Promotion', express.static(path.join(__dirname, 'public/image__promotion')));
 
 app.use('/image__News', express.static(path.join(__dirname, 'public/image__news')));
+
+app.use('/image__Policy', express.static(path.join(__dirname, 'public/image__policy')));
+
+app.use('/image__Sound', express.static(path.join(__dirname, 'public/image__item--sound')));
+
+app.use('/image__Heatsinkbase', express.static(path.join(__dirname, 'public/image__item--heatsinkbase')));
+
+app.use('/image__Hdmi', express.static(path.join(__dirname, 'public/image__item--hdmi')));
+
+app.use('/image__Webcam', express.static(path.join(__dirname, 'public/image__item--webcam')));
+
+
+
 
 
 

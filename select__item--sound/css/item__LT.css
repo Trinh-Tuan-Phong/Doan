@@ -1,0 +1,339 @@
+.sectionIT1__body {
+    margin: 20px auto;
+    width : 1100px;
+}
+
+.sectionIT1__first {
+    display: flex;
+}
+
+.sectionIT1__infor {
+    background-color: white;
+    width           : 80%;
+    border-radius   : 10px;
+    padding         : 20px;
+    display         : flex;
+}
+
+.infor__left {
+    height: 100%;
+    width : 40%;
+}
+
+img {
+    width          : 100%;
+    height         : 100%;
+    object-fit     : cover;
+    object-position: center;
+}
+
+.container {
+    margin    : 50px auto;
+    height    : 80%;
+    width     : 70%;
+    box-shadow: 0 0 10px #bbb;
+}
+
+.main {
+    height  : 60%;
+    position: relative;
+}
+
+.control {
+    position : absolute;
+    top      : 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color    : var(--color-bg);
+    cursor   : pointer;
+    display  : none;
+}
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
+}
+
+.img-wrap {
+    width : 100%;
+    height: 100%;
+}
+
+
+
+.list-img {
+    display: flex;
+}
+
+.list-img div {
+    cursor          : pointer;
+    padding         : 5px;
+    background-color: white;
+    flex            : 1;
+}
+
+.list-img div.active {
+    background-color: var(--color-bg);
+}
+
+
+.parameter {
+    padding    : 20px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size  : 14px;
+}
+
+.parameter ul li {
+    list-style-type: disc;
+}
+
+.infor__right {
+    width      : 60%;
+    padding    : 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.product__price {
+    margin     : 10px 0;
+    display    : flex;
+    align-items: center;
+}
+
+.product__price h4 {
+    font-size: 30px;
+    color    : var(--color-bg);
+}
+
+.product__price h5 {
+    margin-left    : 20px;
+    color          : gray;
+    text-decoration: line-through;
+    font-size      : 20px;
+}
+
+.product__buy {
+    margin       : 20px 0;
+    height       : 80px;
+    display      : grid;
+    align-items  : center;
+    border-top   : 1px dashed;
+    border-bottom: 1px dashed;
+}
+
+.product__buy button {
+    width           : 60%;
+    height          : 40px;
+    background-color: var(--color-bg);
+    color           : white;
+    border          : none;
+    font-size       : 20px;
+    border-radius   : 5px;
+    cursor          : pointer;
+}
+
+.product__promotion h4 {
+    font-size: 15px;
+}
+
+.product__promotion ul {
+    padding: 20px;
+}
+
+.product__promotion ul li {
+    list-style-type: disc;
+    padding        : 5px 0;
+}
+
+.sectionIT1__policy {
+    width: 20%;
+
+}
+
+.policy__infor {
+    background-color: white;
+    border-radius   : 10px;
+    margin-left     : 10px;
+    padding         : 10px;
+}
+
+.policy__infor h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size  : 15px;
+}
+
+.ul__policy {
+    margin: 10px 0;
+}
+
+.ul__policy li,
+.other_services {
+    display       : flex;
+    align-items   : center;
+    font-family   : Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+}
+
+.ul__policy li i,
+.other_services i {
+    margin-right: 5px;
+    color       : var(--color-bg);
+    width       : 20px;
+}
+
+.ul__policy li h5,
+.other_services h5 {
+    font-weight: 400;
+}
+
+.other_services {
+    padding: 10px 0;
+}
+
+.sectionIT1__second {
+    margin-top: 20px;
+    display   : flex;
+}
+
+.sectionIT1__describe {
+    width           : 55%;
+    padding         : 15px;
+    background-color: white;
+    border-radius   : 10px;
+}
+
+.sectionIT1__describe h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sectionIT1__describe iframe {
+    margin: 10px 0;
+}
+
+.sectionIT1__specifications {
+    width           : 45%;
+    border-radius   : 10px;
+    background-color: white;
+    margin-left     : 10px;
+    padding         : 15px;
+    font-family     : Arial, Helvetica, sans-serif;
+}
+
+.table__spacifications {
+    border         : 1px solid #eeeeee;
+    border-collapse: collapse;
+    font-size      : 15px;
+    margin         : 10px 0;
+}
+
+.table__spacifications tr td {
+    padding    : 5px;
+    font-family: "SF Pro Display", 'Arial', sans-serif;
+}
+
+.td__head {
+    background-color: #f7f7f7;
+    font-weight     : 600;
+}
+
+.td__center {
+    color      : var(--color-bg);
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Table */
+
+@media only screen and (max-width:1100px) {
+    .sectionIT1__body {
+        padding: 0 10px;
+        width  : auto;
+    }
+
+}
+
+@media only screen and (max-width:890px) {
+    .sectionIT1__policy {
+        display: none;
+    }
+
+    .sectionIT1__body {
+        display: block;
+    }
+
+    .sectionIT1__infor {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+
+@media only screen and (max-width:767px) {
+    .parameter {
+        display: none;
+    }
+
+    .sectionIT1__infor {
+        flex-direction: column;
+    }
+
+    .infor__left {
+        margin: auto;
+        width : 80%;
+    }
+
+    .slides>div {
+        height: 450px;
+    }
+
+    .infor__right {
+        width: 100%;
+    }
+
+    .sectionIT1__second {
+        flex-direction: column;
+    }
+
+    .sectionIT1__describe {
+        width: 100%;
+    }
+
+    .sectionIT1__specifications {
+        width      : 100%;
+        margin-left: unset;
+        margin-top : 10px;
+    }
+
+}
+
+@media only screen and (max-width:550px) {
+    .infor__left {
+        width: 100%;
+    }
+
+    .slides div div {
+        height: 90%;
+    }
+
+    .silde__select>a {
+        width : 60px;
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .slides div div {
+        height: 70%;
+    }
+}

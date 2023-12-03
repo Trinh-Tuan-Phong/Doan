@@ -50,12 +50,11 @@ body {
 }
 
 .logo__img {
-    background         : url("image/p.png") no-repeat;
+    background         : url("image/P__logo.png") no-repeat;
     height             : 45px;
     width              : 45px;
     background-size    : cover;
     background-position: center;
-    border-radius      : 15px;
 }
 
 .nav__pc {

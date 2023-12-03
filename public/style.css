@@ -48,12 +48,11 @@ body {
 }
 
 .logo__img {
-    background         : url("image/p.png") no-repeat;
+    background         : url("image/P__logo.png") no-repeat;
     height             : 45px;
     width              : 45px;
     background-size    : cover;
     background-position: center;
-    border-radius      : 15px;
 }
 
 .nav__pc {
@@ -300,7 +299,6 @@ body {
     background-size    : 200% 100%;
     background-position: right bottom;
     transition         : all .5s ease-out;
-    border-radius      : 5px;
     border-bottom      : 1px solid gray;
 }
 
@@ -331,16 +329,23 @@ body {
     width       : 30px;
 }
 
+.dropdown:hover {
+    width: 230px;
+
+}
+
 .dropdown-content {
-    position      : absolute;
-    left          : 220px;
-    z-index       : 10;
-    background    : white;
-    display       : none;
-    flex-direction: column;
-    width         : 100px;
-    border-radius : 10px;
-    overflow      : hidden;
+    position                 : absolute;
+    left                     : 230px;
+    z-index                  : 10;
+    background               : white;
+    display                  : none;
+    flex-direction           : column;
+    width                    : 100px;
+    overflow                 : hidden;
+    border-radius            : 10px;
+    border-top-left-radius   : unset;
+    border-bottom-left-radius: unset;
 }
 
 .dropdown:hover .dropdown-content {
@@ -611,6 +616,16 @@ body {
     border-radius: 5px;
     margin-right : 30px;
 }
+
+.control {
+    display: none;
+}
+
+.infor__left:hover .control {
+    display: block;
+}
+
+
 
 /* Table */
 @media only screen and (max-width:1100px) {
